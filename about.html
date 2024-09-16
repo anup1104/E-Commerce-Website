@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color:paleturquoise;
+    }
+    
+    .title {
+        text-align: center; /* Center align the title */
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center; /* Center align the container */
+        align-items: flex-start;
+        padding: 20px;
+    }
+    
+    .person {
+        text-align: left;
+        width: 45%;
+        max-width: 400px; /* Limit maximum width of each person's details */
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 0 10px; /* Add margin between persons */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+    }
+    
+    .person:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        background-color: aquamarine;
+    }
+    
+    .person img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .person h2 {
+        font-size: 20px; /* Adjust font size of person's name */
+        margin-bottom: 10px;
+    }
+    
+    .person p {
+        margin-bottom: 10px;
+        line-height: 1.6;
+    }
+    
+    
+    .home-button {
+        font-size: 18px; /* Increase the font size */
+        padding: 10px 20px; /* Adjust padding to increase button size */
+        background-color: pink; /* Set initial background color */
+        color: green; /* Set initial text color */
+        border: 2px solid #008000; /* Set initial border color */
+        transition: background-color 0.3s ease; /* Add transition effect */
+    }
+    
+    .home-button:hover {
+        background-color: #008000; /* Change background color on hover */
+        color: #fff; /* Change text color on hover */
+    }
+    /* Add styles for the header and navigation */
+header {
+    background-color: #008000; /* Dark green background color */
+    padding: 20px 0; /* Add padding to the top and bottom */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    text-align: center; /* Center align the list */
+}
+
+nav ul li {
+    display: inline-block; /* Display list items horizontally */
+    margin-right: 20px; /* Add margin between list items */
+}
+
+nav ul li a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Font size for navigation links */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+    
+    </style>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <!-- <button onclick="window.location.href='index.html'" class="home-button">Go to Home</button>  -->
+    <div class="container">
+        <div class="person">
+            <img src="signimage1.jpg" alt="Anup Patel">
+            <h2>ANUP PATEL</h2>
+            <p>Hi there! I'm Anup Patel, currently pursuing my Bachelor of Technology (B.Tech) degree in Computer Science and Engineering (CSE) at Nirma University, Ahmedabad, Gujarat, India.</p>
+            <p>I'm passionate about exploring the world of technology and its applications in solving real-world problems. In my second year of studies, I'm actively engaged in coursework, participating in hackathons, and collaborating on projects with fellow students.</p>
+            <p>Outside of academics, I enjoy being part of various student clubs and organizations, where I can apply my skills and contribute to the community. Whether it's organizing tech events or mentoring junior students, I'm always eager to make a positive impact.</p>
+            <p>Nirma University's conducive environment and supportive faculty have been instrumental in shaping my academic journey. I'm excited about the opportunities that lie ahead and am determined to pursue excellence in both my academic and personal endeavors.</p>
+        </div>
+        <div class="person">
+            <img src="signimage.jpg" alt="Aryan Parekh">
+            <h2>ARYAN PAREKH</h2>
+            <p>Hey there! I'm Aryan Parekh, a second-year student pursuing my Bachelor of Technology (B.Tech) degree in Computer Science at Nirma University, located in Ahmedabad, Gujarat, India.</p>
+            <p>My journey in the world of computer science has been an exciting one so far. I'm passionate about exploring various aspects of programming, software development, and technology innovation.</p>
+            <p>Being part of Nirma University's vibrant campus community has provided me with numerous opportunities to expand my knowledge and skills. Whether it's through coursework, projects, or extracurricular activities, I'm constantly learning and growing.</p>
+            <p>Ahmedabad, with its rich cultural heritage and dynamic environment, serves as an inspiring backdrop to my academic pursuits. I'm eager to leverage my education and experiences to make meaningful contributions to the field of computer science and beyond.</p>
+        </div>
+    </div>
+</body>
+</html>

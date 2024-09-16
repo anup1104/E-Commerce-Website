@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <title>Instagram Registration</title>
+    <style>
+        body {
+            background-color: #fafafa;
+            font-family: Arial, sans-serif;
+            background-image: url('signimage1.jpg');
+        }
+        .panel {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        .panel-heading {
+            background-color: #405de6;
+            color: #fff;
+            border-radius: 10px 10px 0 0;
+            padding: 20px 0;
+        }
+        .panel-body {
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="number"] {
+            border-radius: 5px;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+        input[type="text"]:focus,
+        input[type="number"]:focus {
+            border-color: #405de6;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(64, 93, 230, 0.25);
+        }
+        input[type="submit"] {
+            background-color: #405de6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #3149b9;
+        }
+        .panel-footer {
+            background-color: #405de6;
+            color: #fff;
+            border-radius: 0 0 10px 10px;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    
+  <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="panel">
+                <div class="panel-heading text-center">
+                    <h1>Welcome back to Shopee</h1>
+                </div>
+                <div class="panel-body">
+                    <form action="login.php" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="firstName">Enter Your Name</label>
+                            <input type="text" class="form-control" name="fname" id="firstName">
+                        </div>
+                        <div class="form-group">
+                            <label for="pass">Enter Your Password</label>
+                            <input type="password" class="form-control" name="pass" id="rollno">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Enter your Email</label>
+                            <input type="text" class="form-control" name="mail" id="email">
+                        </div>
+                       
+                        <input type="submit" class="btn btn-primary" value="See Profile">
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- <script src="index.js"></script> -->
+</body>
+</html>

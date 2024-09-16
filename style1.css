@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+ 
+#main{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 25% 50% 25%;
+    /* background:url(https://th.bing.com/th/id/OIP.yeh2irSOopufkOzsc4udgQHaE7?w=269&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+    z-index: 10; */
+}
+#left-top-left{
+    /* background-color: rgb(199, 199, 240); */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+}
+#left-top-left img{
+    width: 50%;
+    height: 40%;
+}
+#left-top-right{
+    background-color: rgb(237, 193, 193);
+}
+#left-center{
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-items: center;
+}
+#left-center h1{
+  font-size: 60px;
+  font-weight: 1000;
+  font-style: italic;
+  font-family: Cinzel;
+  /* color: transparent; */
+  /* -webkit-text-stroke: 2px rgb(23, 24, 24); */
+   
+}
+#h11{
+    padding-top: 20px;
+    padding-left:  100px ;
+}
+#h12{
+    padding: 10px 200px;
+}
+#h13{
+    padding-left:  300px;
+    padding-top: 10px;
+}
+#h14{
+    padding-top: 10px;
+    padding-left: 400px;
+}
+
+ 
+#left-bottom{
+    background-color: rgb(139, 194, 196);
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#right{
+   /* background-color: aqua; */
+   grid-row-start: 1;
+   grid-row-end: 5;
+   grid-column-start: 3;
+   background-image: url(https://www.marketingmind.in/wp-content/uploads/2019/02/CxhfqkBW8AA4GOk-700x700.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.marquee {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+    font-size: 5rem; /* Adjust the font size as needed */
+    /* color: rgba(204, 255, 0, 0.5); Adjust the transparency here */
+    color: transparent;
+   -webkit-text-stroke: 2px rgb(255, 0, 0);
+   font-style: oblique;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.marquee:hover{
+  color: rgb(128, 0, 0);
+}

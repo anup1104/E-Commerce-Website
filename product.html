@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Section</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .product {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        /* Set fixed height for the product images */
+        .product img {
+            width: 100%;
+            height: 200px; /* Set the desired height */
+            object-fit: cover; /* Ensure the entire image fits */
+        }
+
+        .product-details {
+            padding: 20px;
+        }
+
+        .product-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .product-price {
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-button {
+            background-color: #28a745; /* Bootstrap success color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-button:hover {
+            background-color: #218838; /* Slightly darker green */
+        }
+
+        .payment-option {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="" style="background-color:rgb(7, 90, 118);">
+        <a class="navbar-brand" style="margin-left: 10px;" href="index.html">Home</a>
+    </nav>
+    <br>
+    <br>
+    <div class="container" >
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4">
+                <div class="product">
+                    <img src="samsung.png" alt="Product 1">
+                    <div class="product-details">
+                        <h2 class="product-title">Samsung Pro</h2>
+                        <p class="product-description">Brand new Samsung Pro</p>
+                        <p class="product-price">$99.99</p>
+                        <!-- Form for adding to cart -->
+                        <form action="cartform.php" method="POST">
+                            <!-- Include any necessary hidden fields here -->
+                            <input type="hidden" name="productName" value="Samsung Pro">
+                            <input type="hidden" name="productPrice" value="99">
+                            <button type="submit" class="product-button btn btn-success">Add to Cart</button>
+                        </form>
+                        <!-- Payment options -->
+                        <!-- <div class="payment-option">
+                            <button class="btn btn-primary">Credit Card</button>
+                            <button class="btn btn-primary">Debit Card</button>
+                            <button class="btn btn-primary">UPI</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4">
+                <div class="product">
+                    <img src="motorola.png" alt="Product 2">
+                    <div class="product-details">
+                        <h2 class="product-title">Motorola</h2>
+                        <p class="product-description">Brand new Motorola</p>
+                        <p class="product-price">$119.99</p>
+                        <!-- Form for adding to cart -->
+                        <form action="cartform.php" method="POST">
+                            <!-- Include any necessary hidden fields here -->
+                            <input type="hidden" name="productName" value="Motorola">
+                            <input type="hidden" name="productPrice" value="119">
+                            <button type="submit" class="product-button btn btn-success">Add to Cart</button>
+                        </form>
+                        <!-- Payment options -->
+                        <!-- <div class="payment-option">
+                            <button class="btn btn-primary">Credit Card</button>
+                            <button class="btn btn-primary">Debit Card</button>
+                            <button class="btn btn-primary">UPI</button>
+                        </div> -->
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- Add more products here -->
+            <div class="col-md-4">
+                <div class="product">
+                    <img src="nokia.png" alt="Product 3">
+                    <div class="product-details">
+                        <h2 class="product-title">Nokia</h2>
+                        <p class="product-description">Brand new Nokia</p>
+                        <p class="product-price">$100</p>
+                        <!-- Form for adding to cart -->
+                        <form action="cartform.php" method="POST">
+                            <!-- Include any necessary hidden fields here -->
+                            <input type="hidden" name="productName" value="nokia">
+                            <input type="hidden" name="productPrice" value="100">
+                            <button type="submit" class="product-button btn btn-success">Add to Cart</button>
+                        </form>
+                        <!-- Payment options -->
+                        <!-- <div class="payment-option">
+                            <button class="btn btn-primary">Credit Card</button>
+                            <button class="btn btn-primary">Debit Card</button>
+                            <button class="btn btn-primary">UPI</button>
+                        </div> -->
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product">
+                    <img src="jio.png" alt="Product 4">
+                    <div class="product-details">
+                        <h2 class="product-title">Motorola</h2>
+                        <p class="product-description">Brand new Jio</p>
+                        <p class="product-price">$50</p>
+                        <!-- Form for adding to cart -->
+                        <form action="cartform.php" method="POST">
+                            <!-- Include any necessary hidden fields here -->
+                            <input type="hidden" name="productName" value="Jio">
+                            <input type="hidden" name="productPrice" value="50">
+                            <button type="submit" class="product-button btn btn-success">Add to Cart</button>
+                        </form>
+                        <!-- Payment options -->
+                        <!-- <div class="payment-option">
+                            <button class="btn btn-primary">Credit Card</button>
+                            <button class="btn btn-primary">Debit Card</button>
+                            <button class="btn btn-primary">UPI</button>
+                        </div> -->
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product">
+                    <img src="micro.png" alt="Product 5">
+                    <div class="product-details">
+                        <h2 class="product-title">Micromax</h2>
+                        <p class="product-description">Brand new Micromax</p>
+                        <p class="product-price">$79</p>
+                        <!-- Form for adding to cart -->
+                        <form action="cartform.php" method="POST">
+                            <!-- Include any necessary hidden fields here -->
+                            <input type="hidden" name="productName" value="Micromax">
+                            <input type="hidden" name="productPrice" value="79">
+                            <button type="submit" class="product-button btn btn-success">Add to Cart</button>
+                        </form>
+                        <!-- Payment options -->
+                        <!-- <div class="payment-option">
+                            <button class="btn btn-primary">Credit Card</button>
+                            <button class="btn btn-primary">Debit Card</button>
+                            <button class="btn btn-primary">UPI</button>
+                        </div> -->
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product">
+                    <img src="iphone.png" alt="Product 6">
+                    <div class="product-details">
+                        <h2 class="product-title">iphone</h2>
+                        <p class="product-description">Brand new iphone</p>
+                        <p class="product-price">$199</p>
+                        <!-- Form for adding to cart -->
+                        <form action="cartform.php" method="POST">
+                            <!-- Include any necessary hidden fields here -->
+                            <input type="hidden" name="productName" value="iphone">
+                            <input type="hidden" name="productPrice" value="199">
+                            <button type="submit" class="product-button btn btn-success">Add to Cart</button>
+                        </form>
+                        <!-- Payment options -->
+                        <!-- <div class="payment-option">
+                            <button class="btn btn-primary">Credit Card</button>
+                            <button class="btn btn-primary">Debit Card</button>
+                            <button class="btn btn-primary">UPI</button>
+                        </div> -->
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

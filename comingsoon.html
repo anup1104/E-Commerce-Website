@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: turquoise;
+}
+
+.container {
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+    opacity: 0; /* Initially set opacity to 0 for animation */
+}
+
+h1 {
+    color: #333;
+}
+
+.subheading {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.image-container {
+    margin-bottom: 30px;
+}
+
+.image-container img {
+    width: 75%; /* Adjusted to cover three-fourths of the screen width */
+    max-height: 200px; /* Limit image height */
+    border-radius: 5px;
+    margin: 0 auto; /* Center the images horizontally */
+}
+
+.follow-us {
+    margin-top: 30px;
+    color: #666;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.container {
+    animation: fadeIn 1s ease-in-out forwards; /* Keep opacity at 1 after animation */
+}
+.wrapper span {
+	position: fixed;
+	bottom: -180px;
+	height: 50px;
+	width: 50px;
+	z-index: -1;
+	background-color: #18191f;
+	box-shadow: 0 0 50px #4e5155, 0 0 100px #2b415c, 0 0 150px #717982, 0 0 200px #0072ff;
+	animation: animate 3s linear infinite;
+}
+.wrapper span:nth-child(1) {
+	left: 60px;
+	animation-delay: 0.6s;
+}
+.wrapper span:nth-child(2) {
+	left: 10%;
+	animation-delay: 3s;
+	width: 60px;
+	height: 60px;
+}
+.wrapper span:nth-child(3) {
+	left: 20%;
+	animation-delay: 2s;
+    box-shadow: 0 0 50px #ba181b, 0 0 100px #ba181b, 0 0 150px #ba181b, 0 0 200px #ba181b;
+}
+.wrapper span:nth-child(4) {
+	left: 30%;
+	animation-delay: 5s;
+	width: 80px;
+	height: 80px;
+}
+.wrapper span:nth-child(5) {
+	left: 40%;
+	animation-delay: 1s;
+    box-shadow: 0 0 50px #ba181b, 0 0 100px #ba181b, 0 0 150px #ba181b, 0 0 200px #ba181b;}
+.wrapper span:nth-child(6) {
+	left: 50%;
+	animation-delay: 7s;
+    box-shadow: 0 0 50px #ba181b, 0 0 100px #ba181b, 0 0 150px #ba181b, 0 0 200px #ba181b;
+}
+.wrapper span:nth-child(7) {
+	left: 60%;
+	animation-delay: 6s;
+	width: 100px;
+	height: 100px;
+    
+}
+.wrapper span:nth-child(8) {
+	left: 70%;
+	animation-delay: 8s;
+    box-shadow: 0 0 50px #ba181b, 0 0 100px #ba181b, 0 0 150px #ba181b, 0 0 200px #ba181b;
+}
+.wrapper span:nth-child(9) {
+	left: 80%;
+	animation-delay: 6s;
+	width: 90px;
+	height: 90px;
+}
+.wrapper span:nth-child(10) {
+	left: 90%;
+	animation-delay: 4s;
+    box-shadow: 0 0 50px #ba181b, 0 0 100px #ba181b, 0 0 150px #ba181b, 0 0 200px #ba181b;
+}
+@keyframes animate {
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	80% {
+		opacity: .7;
+	}
+	100% {
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 0;
+	}
+}
+    </style>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+    <div class="wrapper">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+</div>
+    <div class="container">
+        <h1>Coming Soon</h1>
+        <p class="subheading">Get Ready for an Elevated Shopping Experience</p>
+        <div class="image-container">
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.gif" alt="Image 3">
+        </div>
+        <p class="follow-us">Follow Us for Updates:</p>
+        <div class="social-icons">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.webp" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.webp" alt="Instagram"></a>
+        </div>
+    </div>
+</body>
+</html>
